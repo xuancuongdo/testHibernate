@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 27, 2016 6:15:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Thuadat12457" table="thuadat12457" schema="public" optimistic-lock="version">
+        <id name="gid" type="int">
+            <column name="gid" />
+            <generator class="assigned" />
+        </id>
+        <property name="id" type="java.lang.Integer">
+            <column name="ID" />
+        </property>
+        <property name="thuaid" type="java.lang.Double">
+            <column name="THUAID" precision="17" scale="17" />
+        </property>
+        <property name="xaid" type="java.lang.Integer">
+            <column name="XAID" />
+        </property>
+        <property name="shbando" type="java.lang.Integer">
+            <column name="SHBANDO" />
+        </property>
+        <property name="shthua" type="java.lang.Integer">
+            <column name="SHTHUA" />
+        </property>
+        <property name="dientich" type="java.lang.Double">
+            <column name="DIENTICH" precision="17" scale="17" />
+        </property>
+        <property name="dientichpl" type="java.lang.Double">
+            <column name="DIENTICHPL" precision="17" scale="17" />
+        </property>
+        <property name="maloaidat" type="java.lang.Integer">
+            <column name="MALOAIDAT" />
+        </property>
+        <property name="khloaidat" type="string">
+            <column name="KHLOAIDAT" length="10" />
+        </property>
+        <property name="diadanh" type="string">
+            <column name="DIADANH" length="30" />
+        </property>
+        <property name="dtsd" type="java.lang.Integer">
+            <column name="DTSD" />
+        </property>
+        <property name="tenchu" type="string">
+            <column name="TENCHU" length="50" />
+        </property>
+        <property name="diachi" type="string">
+            <column name="DIACHI" length="50" />
+        </property>
+        <property name="mdsd2003" type="java.lang.Integer">
+            <column name="MDSD2003" />
+        </property>
+        <property name="kh2003" type="string">
+            <column name="KH2003" length="10" />
+        </property>
+        <property name="mscolor" type="java.lang.Integer">
+            <column name="MSCOLOR" />
+        </property>
+        <property name="shthuatam" type="string">
+            <column name="SHTHUATAM" length="10" />
+        </property>
+        <property name="dtthocu" type="string">
+            <column name="DTTHOCU" length="10" />
+        </property>
+        <property name="theGeom" type="serializable">
+            <column name="the_geom" />
+        </property>
+    </class>
+</hibernate-mapping>

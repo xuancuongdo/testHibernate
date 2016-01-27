@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 27, 2016 6:15:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Lokhoan" table="lokhoan" schema="public" optimistic-lock="version">
+        <id name="gid" type="int">
+            <column name="gid" />
+            <generator class="assigned" />
+        </id>
+        <property name="wellname" type="string">
+            <column name="wellname" length="254" />
+        </property>
+        <property name="block" type="string">
+            <column name="block" length="254" />
+        </property>
+        <property name="basin" type="string">
+            <column name="basin" length="254" />
+        </property>
+        <property name="structure" type="string">
+            <column name="structure" length="254" />
+        </property>
+        <property name="class_" type="string">
+            <column name="class" length="254" />
+        </property>
+        <property name="result" type="string">
+            <column name="result" length="254" />
+        </property>
+        <property name="operator" type="string">
+            <column name="operator" length="254" />
+        </property>
+        <property name="contractor" type="string">
+            <column name="contractor" length="254" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="254" />
+        </property>
+        <property name="startDate" type="date">
+            <column name="start_date" length="13" />
+        </property>
+        <property name="tdDate" type="date">
+            <column name="td_date" length="13" />
+        </property>
+        <property name="finishDat" type="date">
+            <column name="finish_dat" length="13" />
+        </property>
+        <property name="waterDept" type="big_decimal">
+            <column name="water_dept" precision="131089" scale="0" />
+        </property>
+        <property name="platHeigh" type="big_decimal">
+            <column name="plat_heigh" precision="131089" scale="0" />
+        </property>
+        <property name="remark" type="string">
+            <column name="remark" length="254" />
+        </property>
+        <property name="platform" type="string">
+            <column name="platform" length="254" />
+        </property>
+        <property name="platType" type="string">
+            <column name="plat_type" length="254" />
+        </property>
+        <property name="bottom" type="string">
+            <column name="bottom" length="254" />
+        </property>
+        <property name="longitude" type="big_decimal">
+            <column name="longitude" precision="131089" scale="0" />
+        </property>
+        <property name="latitude" type="big_decimal">
+            <column name="latitude" precision="131089" scale="0" />
+        </property>
+        <property name="geom" type="serializable">
+            <column name="geom" />
+        </property>
+    </class>
+</hibernate-mapping>
